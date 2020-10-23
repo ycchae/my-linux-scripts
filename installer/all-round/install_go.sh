@@ -5,9 +5,8 @@ DIR="$( cd "$( dirname "$0" )" && pwd -P )"
 set -e
 
 if [ -z $GO_VERSION ];then
-    GO_VERSION=1.15.1
+    GO_VERSION=1.15.3
 fi
-
 echo -e "${Cyan}**Check.**${Color_Off}"
 echo -e "GOlang $GO_VERSION version will be installed"
 echo -e "if you want to change the version execute the following command"
@@ -19,8 +18,8 @@ then
     exit 1
 fi
 
-sudo wget -P /opt https://golang.org/dl/go$VERSION.linux-amd64.tar.gz; \
-sudo tar -C /usr/local -xzf /opt/go$VERSION.linux-amd64.tar.gz; \
-sudo echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile
+sudo wget -P /opt https://golang.org/dl/go$GO_VERSION.linux-amd64.tar.gz;
+sudo tar -C /usr/local -xzf /opt/go$GO_VERSION.linux-amd64.tar.gz;
+sudo sh -c 'echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile'
 
 echo "${Cyan}DONE${Color_Off}"
