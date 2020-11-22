@@ -4,7 +4,7 @@
 set -e 
 
 if [ "$USER" != "root" ];then
-    echo "${Red}need to run with sudo!${Color_Off}"
+    echo -e "${Red}need to run with sudo!${Color_Off}"
 fi
 
 apt install bison build-essential cmake flex git libedit-dev libllvm7 llvm-7-dev libclang-7-dev python zlib1g-dev libelf-dev python3-pip -y
