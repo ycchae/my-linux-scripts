@@ -20,6 +20,6 @@ fi
 
 sudo wget -P /opt https://golang.org/dl/go$GO_VERSION.linux-amd64.tar.gz;
 sudo tar -C /usr/local -xzf /opt/go$GO_VERSION.linux-amd64.tar.gz;
-sudo sh -c 'echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile'
+sudo sh -c 'echo "export PATH=\$PATH:/usr/local/go/bin" >> /etc/profile'
 
 echo -e "${Cyan}DONE${Color_Off}"
