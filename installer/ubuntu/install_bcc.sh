@@ -1,5 +1,6 @@
 #!/bin/bash
-. .color_codes
+DIR="$( cd "$( dirname "$0" )" && pwd -P )"
+. ${DIR}/../../configs/_color_codes.sh
 
 set -e 
 

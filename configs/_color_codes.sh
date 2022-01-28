@@ -1,5 +1,5 @@
 # Reset
-Color_Off='\033[0m'       # Text Reset
+Color_off='\033[0m'       # Text Reset
 
 # Regular Colors
 Black='\033[0;30m'        # Black
@@ -43,4 +43,3 @@ IWhite='\033[1;107m'        # White
 
 # Background
 On_Black='\033[40m'       # Black
-

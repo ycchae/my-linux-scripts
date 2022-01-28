@@ -1,5 +1,6 @@
 #!/bin/bash
-. .color_codes
+DIR="$( cd "$( dirname "$0" )" && pwd -P )"
+. ${DIR}/../../configs/_color_codes.sh
 
 if [ "$USER" != "root" ];then
     echo -e "${Red}need to run with sudo!${Color_Off}"
